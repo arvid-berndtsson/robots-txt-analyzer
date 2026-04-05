@@ -2,9 +2,9 @@
   "name": "my-qwik-empty-starter",
   "description": "Blank project with routing included",
   "engines": {
-    "node": "^18.17.0 || ^20.3.0 || >=21.0.0"
+    "node": ">=20.18.1"
   },
-  "engines-annotation": "Mostly required by sharp which needs a Node-API v9 compatible runtime",
+  "engines-annotation": "Required by undici 7.x (>=20.18.1) which needs the File global available since Node.js 20",
   "private": true,
   "trustedDependencies": [
     "sharp"
